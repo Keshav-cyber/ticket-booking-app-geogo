@@ -26,6 +26,7 @@ const Login = () => {
             window.location.reload();
           },
           (error) => {
+            console.log(error)
             alert("email or password is wrong")
             navigate("/login");
             window.location.reload();

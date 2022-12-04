@@ -25,14 +25,14 @@ const EventDetails = () => {
   console.log(id)
   let user = authService.getCurrentUser()
   const navigate = useNavigate();
-  const eventsApi  =`http://localhost:5000/tickets/${id}`;
+  const eventsApi  =`https://ticket-booking-app-server-production.up.railway.app/tickets/${id}`;
 
   useEffect(() => {
     
      ( async () => {
 
         let tickets = await axios.get(eventsApi,{ headers: {"Authorization" : `${user.accessToken}`}})
-        let eventDet = await axios.get(`http://localhost:5000/events/${id}`,{ headers: {"Authorization" : `${user.accessToken}`}})
+        let eventDet = await axios.get(`https://ticket-booking-app-server-production.up.railway.app/events/${id}`,{ headers: {"Authorization" : `${user.accessToken}`}})
 
         // console.log(tickets.data)
         // console.log(eventDet.data.event)
@@ -66,7 +66,7 @@ const EventDetails = () => {
   const bookTicket = ()=>{
     console.log("bookTicket",ticketId,Quantity)
      axios
-    .post("http://localhost:5000" + "/ticket", 
+    .post("https://ticket-booking-app-server-production.up.railway.app" + "/ticket", 
     {
         ticketId :ticketId,
         quantity:Quantity
@@ -78,21 +78,19 @@ const EventDetails = () => {
     .then((response) => {
         navigate("/myBookings");
         window.location.reload();
-      console.log(response)
+    
       
-    });
+    }).catch((error)=>{
+        alert(error.response.data.msg)
+    })
   }
    
   return(
     <div className="card">
             <div class="card_background_img"></div>
             
-            <div className="user_details">
-                {/* <h3>{name}</h3>
-                <>{'details:'+ description}</>
-                <>{start_date}</>
-                <>{end_date}</> */}
-               
+            <div >
+                choose one option
              </div>
              <div className='container'>{ticketList}</div>
              <div className = 'item'>

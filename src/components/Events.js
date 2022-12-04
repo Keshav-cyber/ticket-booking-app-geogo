@@ -9,7 +9,7 @@ const Events = () => {
   let [events,setEvents] = useState([])
   let user = authService.getCurrentUser()
   console.log(user)
-  const eventsApi = "http://localhost:5000/events";
+  const eventsApi = "https://ticket-booking-app-server-production.up.railway.app/events";
  
 
 

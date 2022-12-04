@@ -21,8 +21,8 @@ const TicketCard = (props) => {
            
                 <div className='ticket'>
                 <button className="button1  " onClick={()=>{props.clickHander(props.ticket._id)}}>  <p> price :{price}
-                available :  {available_quantity}
-                 time : {description}
+                  "   " available :  {available_quantity}
+                  "   "   time : {description}
                  </p>
                 </button>
                
@@ -30,13 +30,7 @@ const TicketCard = (props) => {
             
             </div>
         </div>
-    //      <input
-    //      type="radio"
-    //      name="site_name"
-    //      value={result.SITE_NAME}
-    //      checked={this.state.site === result.SITE_NAME}
-    //      onChange={this.onSiteChanged}
-    //    />
+  
      
       )
   

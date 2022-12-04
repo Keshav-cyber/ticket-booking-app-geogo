@@ -12,7 +12,7 @@ const MyBookings = () => {
 
   const [tickets,setTickets] = useState([])
 
-  const eventsApi = "http://localhost:5000/bookings";
+  const eventsApi = "https://ticket-booking-app-server-production.up.railway.app/bookings";
   const user = authService.getCurrentUser()
 
 

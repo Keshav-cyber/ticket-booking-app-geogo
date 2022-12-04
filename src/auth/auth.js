@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://ticket-booking-app-server-production.up.railway.app";
 
 const signup = (fullName, email, password,mobileNumber) => {
   return axios
