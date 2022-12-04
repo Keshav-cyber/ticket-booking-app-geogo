@@ -39,7 +39,7 @@ const EventDetails = () => {
 
         setEvent(tickets.data.allTickets)
         // setDetails (eventDet.data.event)
-        console.log(details)
+        
 
       })()
     

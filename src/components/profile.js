@@ -3,12 +3,13 @@ import './profile.css'
 import AuthService from '../auth/auth'
 import { useNavigate } from "react-router-dom";
 
-const profile = () => {
-  let user = AuthService.getCurrentUser()
 
+const Profile = () => {
+  let user = AuthService.getCurrentUser()
+  let navigate = useNavigate()
   let {fullName , mobileNumber} = user
  
-  let navigate = useNavigate()
+  
   const handleLogout = ()=>{
           AuthService.logout();
           navigate("/login");
@@ -31,5 +32,5 @@ const profile = () => {
   )
 }
 
-export default profile
+export default Profile
 
