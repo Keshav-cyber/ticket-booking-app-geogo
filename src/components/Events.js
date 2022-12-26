@@ -1,15 +1,15 @@
 import React from 'react'
 import { useState ,useEffect} from 'react'
-import Event from './EventCard'
+import Event from './EventCard.js'
 import axios from 'axios'
 import authService from '../auth/auth'
-
+import './Events.css'
 const Events = () => {
   
   let [events,setEvents] = useState([])
   let user = authService.getCurrentUser()
   console.log(user)
-  const eventsApi = "https://ticket-booking-app-server-production.up.railway.app/events";
+  const eventsApi = "http://localhost:5000/events";
  
 
 

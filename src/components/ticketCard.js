@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { NavLink } from "react-router-dom";
-import './ticketCard.css'
+import './ticketCard.scss'
 const TicketCard = (props) => {
-   
+    console.log(props.ticket)
     let {name,
     purchase_date,
     description,
@@ -16,13 +16,14 @@ const TicketCard = (props) => {
 
     return ( 
         
-         <div >
+         <div className='tickets-list'>
             <div className='ticket-card'>
            
                 <div className='ticket'>
-                <button className="button1  " onClick={()=>{props.clickHander(props.ticket._id)}}>  <p> price :{price}
+                <button className="button1" onClick={()=>{props.clickHander(props.ticket._id)}}>  <p> price :{price}
                   "   " available :  {available_quantity}
                   "   "   time : {description}
+                  
                  </p>
                 </button>
                

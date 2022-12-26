@@ -38,40 +38,40 @@ const Signup = () => {
 
  
     return(
-      <div className="card">
+      <div className="container">
        
-        <div className="card_count">
-        <h2>SignUp</h2>
-        <form onSubmit={handleSignup}> 
-          <div className = "item">
+        <div >
+        <h1 className="page-title">SignUp</h1>
+        <form onSubmit={handleSignup} class="login-form form"> 
+          <div className="input">
            <label> Full Name : </label>
            <input type="text" name="fullName" placeholder="full name"
            value = {fullName}
            onChange ={(e)=>setfullName(e.target.value)}/>
           </div>
-          <div className = "item">
-           <label> email : </label>
+          <div className="input">
+           <label> Email : </label>
            <input type="text" name="email" placeholder="email"
            value = {email}
            onChange ={(e)=>setEmail(e.target.value)}/>
           </div>
           
-          <div className = "item">
-           <label> mobile number : </label>
+          <div className="input">
+           <label> Mobile Number : </label>
            <input type="text" name="mobileNumber" placeholder="mobile number"
            value = {mobileNumber}
            onChange ={(e)=>setmobileNumber(e.target.value)}/>
           </div>
 
-          <div className = "item">
-              <label>password : </label>
+          <div  className="input">
+              <label>Password : </label>
               <input type="password" name="password" placeholder="password"
               value ={password}
               onChange={(e)=>setPassword(e.target.value)}
               />
           </div>
           
-          <button style={{backgroundColor:'blue',color:"white"}} > Submit </button>
+          <button className="send-btn btn" > Submit </button>
         </form>
         </div>
     

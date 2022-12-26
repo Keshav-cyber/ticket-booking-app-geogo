@@ -37,7 +37,7 @@ body {
     height: 50px;
   }
   
-  nav > ul {
+.ui-list {
     margin-right: 40px;
     display: flex;
     justify-content: space-evenly;
@@ -50,7 +50,7 @@ body {
   
   nav > ul > li {
    
-    color: #dfdfe2;
+    /* color: #dfdfe2; */
     margin: 0 0.2rem;
     padding: 0.4rem;
     display: block;
@@ -64,6 +64,6 @@ body {
   
   li > a {
     
-    color: inherit;
+    color: white;
     text-decoration: none;
   }

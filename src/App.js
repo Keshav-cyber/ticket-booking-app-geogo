@@ -10,7 +10,7 @@ import Events from './components/Events'
 import MyBookings from './components/MyBookings'
 import  Profile from './components/profile'
 import SignUp from './components/SignUp';
-import Event from './components/EventCard';
+
 
 import EventDetails from './components/EventDetails';
 

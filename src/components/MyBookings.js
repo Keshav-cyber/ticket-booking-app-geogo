@@ -12,16 +12,16 @@ const MyBookings = () => {
 
   const [tickets,setTickets] = useState([])
 
-  const eventsApi = "https://ticket-booking-app-server-production.up.railway.app/bookings";
+  const eventsApi = "http://localhost:5000/bookings";
   const user = authService.getCurrentUser()
 
 
   useEffect(() => {
       if (tickets.length < 1) {
         axios.get(eventsApi,{ headers: {"Authorization" : `${user.accessToken}`}}).then((response) => {
-          console.log(response);
+         // console.log(response);
           setTickets(response.data.myBookings);
-          console.log(tickets)
+         // console.log(tickets)
         });
       }
     },[]);
@@ -29,9 +29,10 @@ const MyBookings = () => {
   let allTickets = tickets.map((ticket)=>{
     return(
       <div className='booked-ticket'>
-        <p>{'Event name  :' + ticket.eventId.name}</p>
-        <p>{"trnId  :" + ticket._id}</p>
-        <p>{"price  :" +ticket.total_price}</p>
+        <p class="movie-title">{'Event name   :  ' + ticket.eventId.name}</p>
+        <p>{"Ticket Id  :  " + ticket._id}</p>
+        <p>{"Price  :  " +ticket.total_price}</p>
+        <p>{ "Date   :  " + ticket.eventId.start_date }</p>
       </div>
     )
   })

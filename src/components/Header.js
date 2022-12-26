@@ -12,7 +12,7 @@ const Header = () => {
       <header>
       <h1>Easy Tickets</h1>
       <nav>
-        <ul>
+        <ul className='ui-list'>
           { userLoggedIn && <li><Link   to='/events'>EVENTS</Link></li>}
           { userLoggedIn && <li><Link   to='/mybookings'>MY TICKETS</Link></li>}
           { userLoggedIn && <li><Link   to='/profile'>PROFILE</Link></li>}
