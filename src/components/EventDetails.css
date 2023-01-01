@@ -1,0 +1,22 @@
+.event-list{
+    overflow: hidden;
+    z-index: -1;
+}
+
+.book-btn{
+    margin: 10px;
+    margin-left: 40%;
+    padding: 16px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #b4c3bf;
+    color: #292525;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}

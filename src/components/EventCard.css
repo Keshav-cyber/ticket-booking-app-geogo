@@ -1,0 +1,92 @@
+
+
+.movie-card {
+	background: #ffffff;
+	box-shadow: 0px 6px 18px rgba(0,0,0,.1);
+	width: 100%;
+	/* max-width: 315px;
+	min-width: 150px; */
+	margin: 2em;
+	border-radius: 10px;
+	display:inline-block;
+}
+
+.movie-header {
+	padding:0;
+	margin: 0;
+	height: 367px;
+	width: 100%;
+	display: block;
+	border-top-left-radius: 10px;
+	border-top-right-radius:10px;
+}
+
+
+.babyDriver {
+	
+	background-size: cover;
+}
+
+.movie-content {
+	padding: 18px 18px 24px 18px;
+	margin: 0;
+}
+
+.movie-content-header{
+	display: table;
+	width: 100%;
+}
+
+.movie-title {
+	font-size: 24px;
+	margin: 0;
+	display: table-cell;
+}
+
+
+.event{
+	border: none;
+}
+.button-32{
+	text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e7ed;
+    text-align: center;
+}
+
+
+
+.child {
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 80px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
